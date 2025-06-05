@@ -10,7 +10,7 @@ npm run build
 ```
 
 After running the build command, open Chrome's **Extensions** page and load the
-`nova-trigger/dist` directory as an unpacked extension. Opening `index.html`
-from the root folder will cause a MIME type error because the React source files
-are not compiled. Always use the contents of the `dist` folder when testing the
-extension.
+contents of `nova-trigger/dist` as an unpacked extension. Loading the root
+folder directly will fail because the `index.html` file in the source directory
+expects to be served by Vite. You must load the prebuilt files from `dist/`
+to avoid MIME type errors and the blank popup issue.
