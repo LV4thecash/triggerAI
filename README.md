@@ -3,14 +3,11 @@
 This repository contains the NOVA TRIGGER Chrome extension located in
 `nova-trigger/`.
 
-To run the extension locally and avoid the blank popup issue:
+The extension is already built in `nova-trigger/dist`. To use it:
 
-```bash
-cd nova-trigger
-npm install
-npm run build
-```
+1. Open Chrome's **Extensions** page.
+2. Enable **Developer mode**.
+3. Click **Load unpacked** and select the `nova-trigger/dist` folder.
 
-Then load the prebuilt `nova-trigger/dist` folder as an unpacked extension in
-Chrome. Loading the root folder will not work because the source `index.html`
-requires the Vite development server.
+There is no need to run build commands. Loading the root folder will show a
+blank popup because the uncompiled source expects the Vite dev server.

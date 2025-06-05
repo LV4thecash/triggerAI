@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "NOVA TRIGGER",
+  "version": "1.0",
+  "description": "Futuristic webhook trigger for Relevance AI",
+  "permissions": [
+    "storage",
+    "identity"
+  ],
+  "host_permissions": [
+    "https://api-d7b62b.stack.tryrelevance.com/*"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "public/icons/icon16.png",
+      "48": "public/icons/icon48.png",
+      "128": "public/icons/icon128.png"
+    }
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/*",
+        "public/icons/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
