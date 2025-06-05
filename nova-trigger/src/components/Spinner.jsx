@@ -1,4 +1,4 @@
-import { Motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 
 export default function Spinner() {
   return (

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Motion } from 'framer-motion';
+import { motion as Motion } from 'framer-motion';
 import { getHistory } from '../storage/StorageService';
 
 export default function HistoryModal({ onClose }) {

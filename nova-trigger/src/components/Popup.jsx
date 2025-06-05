@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Motion, AnimatePresence } from 'framer-motion';
+import { motion as Motion, AnimatePresence } from 'framer-motion';
 import Spinner from './Spinner';
 import Notification from './Notification';
 import HistoryModal from './HistoryModal';
